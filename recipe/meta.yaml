@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/eight04/pyDesktop3
-  license: GNU Lesser General Public License v3 or later (LGPLv3+)
+  license: GNU Lesser General Public v3 or later (LGPLv3+)
   license_family: LGPL
   license_file: 'docs/COPYING.txt'
   summary: 'Simple desktop integration for Python.'
