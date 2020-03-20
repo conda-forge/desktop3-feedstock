@@ -1,6 +1,5 @@
 {% set name = "desktop3" %}
 {% set version = "0.5.2" %}
-{% set hash_type = "sha256" %}
 {% set hash = "37e8bfbfbd0ce97471fc48bf5b9ddb2459b7e5f2756b2f5e682831f365723615" %}
 {% set ext = "zip" %}
 
@@ -11,10 +10,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ ext }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ ext }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
-  number: 1000
+  number: 1001
   skip: true  # [py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
