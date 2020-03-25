@@ -3,7 +3,7 @@ About desktop3
 
 Home: https://github.com/eight04/pyDesktop3
 
-Package license: GNU Lesser General Public v3 or later (LGPLv3+)
+Package license: LGPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
