@@ -10,16 +10,17 @@ source:
   sha256: a82a49352dac14faa77e31fef8b0773667a2ce83deafc44abc1484d19ea44f6b
 
 build:
-  number: 5
-  skip: true  # [py2k]
+  noarch: python
+  number: 6
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
+    - setuptools
   run:
-    - python
+    - python >=3.5
 
 test:
   imports:
