@@ -1,5 +1,5 @@
 {% set name = "desktop3" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a82a49352dac14faa77e31fef8b0773667a2ce83deafc44abc1484d19ea44f6b
+  sha256: 2fe6d277751c87e118fac319b5bbc335d45ed81022136dece9f50d34433c2acf
 
 build:
   noarch: python
-  number: 7
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
